@@ -15,7 +15,7 @@ python 2.7 is recommended
 ###Clone the repo and run it directly
 
 ##Contact
-Zhi-Min Zhang:zmzhang@csu.edu.cn
+Zhi-Min Zhang: zmzhang@csu.edu.cn
 
 
 
