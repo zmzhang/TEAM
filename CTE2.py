@@ -389,7 +389,7 @@ if __name__ == '__main__':
     diff2 = SXtest-MXtest
     plt.subplot(211)
     plt.plot(wavelength, diff.T)
-    plt.title('StestCTE2_Mtest')
+    plt.title('StestTEAM_Mtest')
     plt.axis([1100, 2500, -0.03, 0.03])
     plt.subplot(212)
     plt.plot(wavelength, diff2.T)

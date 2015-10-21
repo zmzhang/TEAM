@@ -1,5 +1,5 @@
-# CTE2
-A novel calibration transfer algorithm based on ensemble extreme learning machine auto-encoder (CTE2) has been proposed. Compared with commonly used method like PDS and CCA, the CTE2 is a more stable method and can significantly reduce prediction errors.
+# TEAM
+A novel calibration transfer algorithm based on ensemble Extreme learning machine Auto-encoderMethod (TEAM) has been proposed. Compared with commonly used method like PDS and CCA, the TEAM is a more stable method and can significantly reduce prediction errors.
 The programming language is Python.
 
 ##Installation
