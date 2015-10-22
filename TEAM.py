@@ -340,7 +340,7 @@ if __name__ == '__main__':
     SXtrain = SXcal[CalInd]; SXpre = SXcal[ValInd]
     Ytrain = Ycal[CalInd]; Ypre = Ycal[ValInd]
 
-    hiddens = np.arange(300, 350)
+    hiddens = np.arange(300, 303)
     err_tests = []; pre_tests = []; pre_trains =[]; err_trains =[]
 
     for i, num in enumerate(hiddens):
