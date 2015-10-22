@@ -1,5 +1,5 @@
 # TEAM
-A novel spectra standardization algorithm entitled Transfer via Extreme learning machine Auto-encoder Method (TEAM) has been proposed. Compared with commonly used method like PDS and CCA, the TEAM is a more stable method and can significantly reduce prediction errors.
+A novel spectra standardization algorithm entitled **T**ransfer via **E**xtreme learning machine **A**uto-encoder **M**ethod (TEAM) has been proposed. Compared with commonly used method like PDS and CCA, the TEAM is a more stable method and can significantly reduce prediction errors.
 The programming language is Python.
 
 ![System diagram of TEAM](/diagram.png)
