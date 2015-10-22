@@ -13,9 +13,21 @@ Python 2.7 is recommended
 https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
 
 ###Install dependent packages
-1. Numpy:      pip install numpy
-2. Scipy:      pip install scipy
-3. Matplotlib: pip install matplotlib
+1. Numpy:
+2. Scipy:      
+    
+3. Matplotlib: 
+    
+
+```shell
+    
+    pip install numpy
+
+	pip install scipy
+
+	pip install matplotlib
+
+```shell
 
 ###Clone the repo and run it directly
 
