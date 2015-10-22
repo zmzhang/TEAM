@@ -20,13 +20,9 @@ https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
     
 
 ```shell
-    
-    pip install numpy
-
-	pip install scipy
-
-	pip install matplotlib
-
+pip install numpy
+pip install scipy
+pip install matplotlib
 ```
 
 ###Clone the repo and run it directly
