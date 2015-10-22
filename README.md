@@ -27,7 +27,7 @@ https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
 
 	pip install matplotlib
 
-```shell
+```
 
 ###Clone the repo and run it directly
 
