@@ -1,5 +1,4 @@
 # coding: utf-8
-# online learning
 import sys
 from numpy import arange, where, array, dot, outer, zeros, concatenate, ones, tile, mean
 import numpy as np
@@ -376,23 +375,24 @@ if __name__ == '__main__':
 
     plt.figure()
     plt.plot(x, y, color='black')
-    plt.scatter(Ytest, Mypred, color="red", label="MPYpred" )
-    plt.scatter(Ytest, Stestypred, color="blue", label="SPYpred")
-    plt.scatter(Ytest, Stestpre_ypred, color="black", label="newSPYpred")
+    plt.plot(Ytest, Mypred, 'ro', label="MPYpred" )
+    plt.plot(Ytest, Stestypred, 'b+', label="SPYpred")
+    plt.plot(Ytest, Stestpre_ypred, 'g^', label="newSPYpred")
     plt.xlabel("Reference values")
     plt.ylabel("predicted values")
     plt.legend()
-    plt.show()
+
 
     wavelength = np.arange(1100, 2500, 2)
     diff = SXtestpre-MXtest
     diff2 = SXtest-MXtest
+    plt.figure()
     plt.subplot(211)
     plt.plot(wavelength, diff.T)
     plt.title('StestTEAM_Mtest')
-    plt.axis([1100, 2500, -0.03, 0.03])
+    plt.axis([1100, 2500, -0.08, 0.08])
     plt.subplot(212)
     plt.plot(wavelength, diff2.T)
     plt.title('Stest-Mtest')
-    plt.axis([1100, 2500, 0.00, 0.08])
+    plt.axis([1100, 2500, -0.08, 0.08])
     plt.show()
