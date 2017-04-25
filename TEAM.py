@@ -113,7 +113,7 @@ def RMSEP(ypred, Ytest):
 def error(pre, signal):
     err = pre - signal
     err = err * err
-    print "sum of err^2", err.sum()
+    print("sum of err^2", err.sum())
     return err.sum()
 
 def pretreat(X):
@@ -231,7 +231,7 @@ class ELMAutoEncoder(object):
         pre = self.predict(input)
         err = pre - signal
         err = err * err
-        print "sum of err^2", err.sum()
+        print ("sum of err^2", err.sum())
         return err.sum()
 
 ##  Layer  ##
@@ -276,7 +276,7 @@ class Layer(object):
             sys.stdout.write("\r    input %d" % (i+1))
             sys.stdout.flush()
             H.append(self.get_i2h(d))
-        print " done."
+        print (" done.")
 
         # coefficient of regularization
         sys.stdout.write("\r    coefficient")
@@ -286,7 +286,7 @@ class Layer(object):
             coefficient = 0
         else:
             coefficient = 1. / self.c
-        print " done."
+        print (" done.")
 
         # pseudo inverse
         sys.stdout.write("\r    pseudo inverse")
@@ -299,13 +299,13 @@ class Layer(object):
         else:
             Hp = np.linalg.inv(np.dot(H.T, H) + regular)
             Hp = np.dot(Hp, H.T)
-        print " done."
+        print( " done.")
 
         # set beta
         sys.stdout.write("\r    set beta")
         sys.stdout.flush()
         self.beta = np.dot(Hp, np.array(signal))
-        print " done."
+        print (" done.")
 
 
 
@@ -365,10 +365,10 @@ if __name__ == '__main__':
     Stestpre_ypred = plspredtest(coef, SXtestpre, xp1, xp2, yp1, yp2)
     RMSEP_Stestpre, Q2_Stestpre = RMSEP(Stestpre_ypred, Ytest)
 
-    print "RMSEP_Spre:", RMSEP_Stestpre, "Q2_Spre:", Q2_Stestpre
-    print "RMSEP_M:", RMSEP_M, "Q2_mp5:", Q2_M
-    print "RMSEP_S:", RMSEP_S, "Q2_m5:", Q2_S
-    print "err_pre:", err_pre
+    print ("RMSEP_Spre:", RMSEP_Stestpre, "Q2_Spre:", Q2_Stestpre)
+    print ("RMSEP_M:", RMSEP_M, "Q2_mp5:", Q2_M)
+    print ("RMSEP_S:", RMSEP_S, "Q2_m5:", Q2_S)
+    print ("err_pre:", err_pre)
 
     x = np.arange(9, 13)
     y = np.arange(9, 13)
