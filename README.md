@@ -5,14 +5,14 @@ The programming language is Python.
 ![System diagram of TEAM](/diagram.png)
 
 
-##Installation
+## Installation
 
-###Install Python
+### Install Python
 Python 2.7 is recommended
 
 https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
 
-###Install dependent packages
+### Install dependent packages
 1. Numpy:
 2. Scipy:      
     
@@ -25,11 +25,11 @@ pip install scipy
 pip install matplotlib
 ```
 
-###Clone the repo and run it directly
+### Clone the repo and run it directly
 
 git clone https://github.com/zmzhang/TEAM.git
 
-##Contact
+## Contact
 Zhi-Min Zhang: zmzhang@csu.edu.cn
 
 
