@@ -8,14 +8,13 @@ The programming language is Python.
 ## Installation
 
 ### Install Python
-Python 2.7 is recommended
+[Python 2.7](https://www.python.org/downloads/release/python-2716/ "Python 2.7") and [Python 3.7](https://www.python.org/downloads/release/python-373/ "Python 3.7") are recommended.
 
-https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
+
 
 ### Install dependent packages
 1. Numpy:
 2. Scipy:      
-    
 3. Matplotlib: 
     
 
