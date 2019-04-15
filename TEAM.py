@@ -76,7 +76,7 @@ def plscvfold(X, y, A, K):
     RMSECV_MIN = min(RMSECV_ALL)
     SST = np.sum((yytest - mean(y))**2)
     Q2_all = 1-PRESS/SST
-    return {'index_A': index_A[0] + 1, 'RMSECV_ALL': RMSECV_ALL, 'Q2_all': Q2_all}
+    return {'index_A': index_A[0][0] + 1, 'RMSECV_ALL': RMSECV_ALL, 'Q2_all': Q2_all}
 
 def pls1_nipals(X, y, a):
     T = zeros((X.shape[0], a))
@@ -181,9 +181,9 @@ class ELMAutoEncoder(object):
 
         # orthogonal weight and forcely regularization
 
-        for i in xrange(len(weight)):
+        for i in range(len(weight)):
             w = weight[i]
-            for j in xrange(0,i):
+            for j in range(0,i):
                 w = w - weight[j].dot(w) * weight[j]
             w = w / np.linalg.norm(w)
             weight[i] = w
